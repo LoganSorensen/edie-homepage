@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  /* padding: 2% 3% 0; */
   margin: 0;
 }
 
@@ -10,6 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2% 3%;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .logo {
@@ -236,6 +239,7 @@ i {
 
 .project img {
   border-radius: 12px;
+  max-width: 100%;
 }
 
 .project-type {
@@ -376,4 +380,202 @@ footer .contact input {
 
 footer .contact button {
   margin-left: 8%;
+}
+
+@media screen and (max-width: 375px) {
+  .menu-btn {
+    display: inline !important;
+    font-size: 30px;
+    color: black;
+  }
+
+  .menu-close {
+    display: block !important;
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    font-size: 30px;
+  }
+
+  .header-nav {
+    background-color: #181719;
+    flex-direction: column;
+    justify-content: unset;
+    padding: 90% 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    transition: 0.4s ease;
+  }
+
+  .nav-open {
+    width: 100%;
+    transition: 0.4s ease;
+  }
+
+  .header-nav a {
+    color: #f2f2f2;
+    margin: 3%;
+  }
+
+  .cta span,
+  h1,
+  .cta h2,
+  .cta p,
+  .cta .contact {
+    margin: 0 14% 0;
+  }
+
+  .cta span {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+    width: 75%;
+    line-height: 36px;
+  }
+
+  .hero-image {
+    height: 15vh;
+  }
+
+  .cta h2,
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cta h2 {
+    width: 50%;
+  }
+
+  .cta p {
+    width: 75%;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .cta .contact {
+    width: 80%;
+    margin: 10% auto 0;
+  }
+
+  .cta .contact label {
+    font-size: 10px;
+  }
+
+  .contact input {
+    font-size: 14px;
+  }
+
+  .contact button {
+    font-size: 14px;
+    margin-left: 62.5%;
+    padding: 2.3% 5%;
+  }
+
+  .services h2 {
+    width: 75%;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20%;
+    width: 100%;
+  }
+
+  .service-card {
+    width: 100%;
+    margin: 0 auto 30%;
+  }
+
+  #our-work {
+    margin: 0 5% 25%;
+  }
+
+  .our-work h2 {
+    width: 90%;
+    margin: 0 11%;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .project-type {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .project-name {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .our-work a {
+    margin: 0;
+  }
+
+  .our-team {
+    margin: 0 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meet-the-team {
+    width: 80%;
+    margin: 0;
+  }
+
+  .team-images img {
+    width: 55%;
+  }
+
+  .team-images div img:first-child {
+    width: 75%;
+  }
+
+  .team-images div img {
+    width: 85%;
+    margin: 4%;
+  }
+
+  .client-section {
+    margin: 0 5% 15%;
+  }
+
+  .client-section h2 {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 75vh;
+    padding: 10% 10% 20%;
+  }
+
+  .social-media {
+    width: 30%;
+  }
+
+  footer .contact label {
+    font-size: 10px;
+  }
+
+  footer .contact button {
+    margin-left: 60%;
+    padding: 3.7% 6.3%;
+  }
 }
